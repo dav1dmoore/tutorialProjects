@@ -57,7 +57,8 @@ for(let i = 0; i < squares.length; i++){
 if (squares[i].classList.contains('valid')){
   if(i > 0 && !leftEdge && squares[i - 1].classList.contains('bomb')) total++
   if(i > 9 && !rightEdge && squares[i + 1 - width].classList.contains('bomb')) total++
-  if(i > 10 && squares[i-width].classList.contains('bomb')) total++
+  if(i > 10 && squares[i-width-1].classList.contains('bomb')) total++
+  // Fixed bug on line 60 by adding -1 to i-width-1
   if(i > 11 && !leftEdge && squares[i-1-width].classList.contains('bomb')) total++
   if(i <= 98 && !rightEdge && squares[i+1].classList.contains('bomb')) total++
   if(i < 90 && !leftEdge && squares[i-1+width].classList.contains('bomb')) total++
