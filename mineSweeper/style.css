@@ -1,0 +1,40 @@
+.grid {
+border: 5px solid #D4CDB2;
+height:400px;
+width: 400px;
+background-color: #D4CDB4;
+display: flex;
+flex-wrap: wrap;
+}
+
+.grid div {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #A9A292;
+  box-shadow: inset 2px 2px 2px #F7F0DE;
+}
+
+.grid div:hover {
+    background-color: #C7C1AA;
+}
+
+.bomb {
+  text-align: center;
+  font-size: X-large;
+  background-color: #D4CDB4;
+  color: black !important;
+}
+
+.checked {
+  text-align: center;
+  font-weight: bold;
+  font-size: X-large;
+  background-color: #C7BFAD;
+  box-shadow: none !important
+}
+
+.flag {
+  text-align: center;
+  font-size: X-large;
+  color: black !important;
+}
